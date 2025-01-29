@@ -215,10 +215,18 @@ main {
 /* Footer sempre no final */
 footer {
     text-align:start;
-    padding: 1.3rem 20px;
+    justify-content: space-between;
+    padding: 1.5rem 10px;
     color: #fff;
     background: linear-gradient(to right, purple, violet, blue);
     font-family: "DM Sans", sans-serif;
+}
+
+
+.footer__copy p {
+    margin: 1px -1px -18px 14px;
+    justify-content: space-between;
+    justify-items:flex-start;
 }
 
 .footer .footer__icons {
@@ -227,4 +235,12 @@ footer {
     flex-direction: row;
     font-family: "DM Sans", sans-serif;
     
+}
+
+.footer .footer__icons .icons__item {
+    margin-left: 10px; /* Adiciona espaço à direita do ícone */
+}
+
+.footer .footer__icons .icons__item .fa{
+    margin-right: 2px; /* Adiciona espaço à direita do ícone */
 }
