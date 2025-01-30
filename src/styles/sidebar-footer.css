@@ -1,18 +1,20 @@
 body{
     background-color: #000;
     font-family: var(--font-dm-sans);
+    display: flex;
 }
 
-.sidebar{
-    position:fixed;
-    top:0;
-    left:0;
-    bottom:0;
-    padding:12px;
-    width:300px;
+.container {
+    display: flex;
+    height: calc(100vh - 76px);
 }
 
-.sidebar__navigation{
+.sidebar {
+    height: 100%;
+    width: 300px;
+}
+
+.sidebar__navigation {
     background-color: #121212;
     border-radius:8px;
     padding:16px 0 0 16px;
@@ -77,16 +79,14 @@ body{
     padding:20px 10px;
 }
 
-.library .library__button .fa{
-    font-size:20px;
-    font-weight: 300;
+.library .library__button .fas{
     color:#b3b3b3;
-    margin-right: 10px;
-    padding-right:8px;
+    margin-right: 1px;
+    padding-right:4px;
 }
 
 .library .library__content .fa-plus{
-    margin: 24px 10px;
+    margin: 10px 5px 0 10px;
 }
 
 .section-playlist{
@@ -164,6 +164,11 @@ body{
     margin:8px;
     padding:8px;
     border-radius:20px;
+}
+
+.main-sections{
+    height:100%;
+    background-color: #121212;
 }
 
 .disclaimer-premium {
